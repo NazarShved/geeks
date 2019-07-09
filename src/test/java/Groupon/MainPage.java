@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MainPage {
     //Vusal
+    //New Change
 
     @FindBy(id = "ls-search")
     WebElement mainSearchWindow;
