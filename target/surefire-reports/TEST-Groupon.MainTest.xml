@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Groupon.MainTest" time="421.476" tests="14" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Shvednazar994\geeks\target\test-classes;C:\Users\Shvednazar994\geeks\target\classes;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Shvednazar994\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Shvednazar994\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Shvednazar994\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Shvednazar994\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Shvednazar994\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Shvednazar994\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Shvednazar994\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Shvednazar994\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Shvednazar994\.m2\repository\com\github\javafaker\javafaker\0.18\javafaker-0.18.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Shvednazar994\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Shvednazar994\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Shvednazar994\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Shvednazar994\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.1\webdrivermanager-3.6.1.jar;C:\Users\Shvednazar994\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Shvednazar994\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Shvednazar994\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\Shvednazar994\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Shvednazar994\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Shvednazar994\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Shvednazar994\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\Shvednazar994\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Shvednazar994\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Shvednazar994\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Shvednazar994\AppData\Local\Temp\surefire8049347976208612844\surefirebooter4431289293200740777.jar C:\Users\Shvednazar994\AppData\Local\Temp\surefire8049347976208612844 2019-07-06T15-50-01_251-jvmRun1 surefire3756153295546599900tmp surefire_03078456878379496435tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\Shvednazar994\geeks\target\test-classes;C:\Users\Shvednazar994\geeks\target\classes;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Shvednazar994\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Shvednazar994\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Shvednazar994\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Shvednazar994\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Shvednazar994\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Shvednazar994\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Shvednazar994\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Shvednazar994\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Shvednazar994\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Shvednazar994\.m2\repository\com\github\javafaker\javafaker\0.18\javafaker-0.18.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Shvednazar994\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Shvednazar994\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Shvednazar994\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Shvednazar994\.m2\repository\io\github\bonigarcia\webdrivermanager\3.6.1\webdrivermanager-3.6.1.jar;C:\Users\Shvednazar994\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Shvednazar994\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Shvednazar994\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\Shvednazar994\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Shvednazar994\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Shvednazar994\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Shvednazar994\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\Shvednazar994\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\Shvednazar994\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\Shvednazar994\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Shvednazar994\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Shvednazar994"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="basedir" value="C:\Users\Shvednazar994\geeks"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Shvednazar994\AppData\Local\Temp\surefire8049347976208612844\surefirebooter4431289293200740777.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="user.name" value="Shvednazar994"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Shvednazar994\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Shvednazar994\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="user.dir" value="C:\Users\Shvednazar994\geeks"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Users\Shvednazar994\Downloads\geckodriver.exe;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\tools\bin;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\platform-tools;C:\Users\Shvednazar994\AppData\Local\Android\Sdk;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\emulator;C:\Program Files\nodejs\;C:\Program Files\nodejs;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\build-tools\29.0.0;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\tools;C:\maven\apache-maven-3.6.1\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Program Files\Git\cmd;C:\Users\Shvednazar994\Downloads\geckodriver.exe;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\tools\bin;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\platform-tools;C:\Users\Shvednazar994\AppData\Local\Android\Sdk;C:\Ruby\bin;C:\Users\Shvednazar994\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-11.0.2\bin;C:\Users\Shvednazar994\Downlo;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\emulator;C:\Users\Shvednazar994\AppData\Roaming\npm;C:\Program Files\nodejs;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\build-tools\29.0.0;C:\Users\Shvednazar994\AppData\Local\Android\Sdk\tools;C:\maven\apache-maven-3.6.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="aigerimTests" classname="Groupon.MainTest" time="37.62"/>
+  <testcase name="calendarFuncDepAndRet" classname="Groupon.MainTest" time="14.9"/>
+  <testcase name="calendarFuncOnlyDep" classname="Groupon.MainTest" time="10.019"/>
+  <testcase name="dealsOfTheDayVerPriceRange" classname="Groupon.MainTest" time="21.238"/>
+  <testcase name="enterCityWithAutoSug" classname="Groupon.MainTest" time="9.703"/>
+  <testcase name="featuredLocationVer" classname="Groupon.MainTest" time="18.514">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at Groupon.MainTest.featuredLocationVer(MainTest.java:192)
+</failure>
+    <system-out><![CDATA[The Loop (1)
+The number of locations : 9
+============================
+879 Villa Street, Elgin
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 21246
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:52:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="featuredPriceRangeVer" classname="Groupon.MainTest" time="34.368"/>
+  <testcase name="kadirTests" classname="Groupon.MainTest" time="16.8">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#nothx&quot;}&#10;  (Session info: chrome=75.0.3770.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-BEIVEA1&apos;, ip: &apos;192.168.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\Shvednazar994\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:60984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: eb14a5bc71d891dae4784522820e2dcf&#10;*** Element info: {Using=id, value=nothx}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#nothx"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BEIVEA1', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\Shvednazar994\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:60984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eb14a5bc71d891dae4784522820e2dcf
+*** Element info: {Using=id, value=nothx}
+	at Groupon.MainTest.kadirTests(MainTest.java:204)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 23271
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:53:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 30659
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:53:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="olhaTests" classname="Groupon.MainTest" time="28.357">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//ul[@class=&apos;refinement-list&apos;]/li/a)[3]&quot;}&#10;  (Session info: chrome=75.0.3770.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-BEIVEA1&apos;, ip: &apos;192.168.1.166&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\Shvednazar994\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:61071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: a2454cdb14cebafeb47ff5d15de84c6d&#10;*** Element info: {Using=xpath, value=(//ul[@class=&apos;refinement-list&apos;]/li/a)[3]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"(//ul[@class='refinement-list']/li/a)[3]"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BEIVEA1', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\Shvednazar994\AppD...}, goog:chromeOptions: {debuggerAddress: localhost:61071}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a2454cdb14cebafeb47ff5d15de84c6d
+*** Element info: {Using=xpath, value=(//ul[@class='refinement-list']/li/a)[3]}
+	at Groupon.MainTest.olhaTests(MainTest.java:210)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 31805
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:54:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 27492
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:54:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="searchFunc" classname="Groupon.MainTest" time="18.177"/>
+  <testcase name="searchSortByBrand" classname="Groupon.MainTest" time="26.071">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at Groupon.MainTest.searchSortByBrand(MainTest.java:111)
+</failure>
+    <system-out><![CDATA[Mercedes SLS Ride-On Push Car
+WARMIES Cozy Plush Heatable Lavender Scented Stuffed Animal
+Bunch O Balloons Water Balloon Set with Minions Options
+Picasso Tiles 3D Magnetic Building Block Sets
+Melissa & Doug See & Spell Skill Builder
+Dream Tents
+216pcs 3mm 5mm Buckyballs Magnetic DIY Balls Neocube Puzzle Toy
+USA, World or Canada Magnetic-Pin Travel Map with Bonus 20 Pins
+6' Outdoor Kids Christmas Gift Stripe Playhouse Teepee Play Tent w/Carrying Bag
+Rubik's Spin Block
+Creatov Kid's Toy Tent Playhouse with Carry Case
+Lil' Rider Wiggle Ride-on Car
+Flex-Track Race Car Track Set
+Wireless Bluetooth Karaoke Microphone
+Shopkins Season 7 & 8 Collectible Shopkins
+Magic Pad Light Up Drawing Pad for Kids
+Lil' Luggage Builder, Chef, Vanity, or Doctor Playset
+Montessori Math Manipulatives Kids Learning Toy
+Marvel, DC, or Harry Potter Licensed Hand-Sensor Ball Helicopter
+Kids' Big Gardening Tool Set (4-Piece)
+Baby Genius Step-To-Dance Junior Piano Mat
+Rubik's Magic Star Spinner
+Blue Hat Toy Company Remote-Controlled Thunder Tumblers
+Harry Potter Engraved Wooden Music Box
+World Tech Toys Activity Suitcase Play Set (14-, 16-, 22-, or 26-Pc.)
+Click N' Play Remote-Controlled Robot
+PicassoTiles S.T.E.A.M. Educational DIY Take-A-Part Toy Set
+Monster High Fashion Doll with Beauty Collection Set
+Cornhole Replacement Bean Bags (8-Pack)
+Kids Fantastic Washable Coloring Play Mat with 12 Washable Markers
+Double-Sided Tabletop Easel Kit (7-Piece)
+Lil' Rider FX Battery-Powered 3-Wheel Bike (multiple colors)
+Marvel or DC Flying Figures
+Kids' Indoor and Outdoor Tool, Camping, Kitchen, BBQ, or Tent Play Set
+Magic Tracks Gift Collection
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 19953
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:55:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="thingsToDoSort" classname="Groupon.MainTest" time="12.726">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at Groupon.MainTest.thingsToDoSort(MainTest.java:133)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 27512
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:55:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="thingsToDoSortByArrAndLoc" classname="Groupon.MainTest" time="18.589">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at Groupon.MainTest.thingsToDoSortByArrAndLoc(MainTest.java:159)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 75.0.3770.8 (681f24ea911fe754973dda2fdc6d2a2e159dd300-refs/branch-heads/3770@{#40}) on port 22514
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Jul 06, 2019 3:56:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="thingsToDoSortBySprtAndOutdrs" classname="Groupon.MainTest" time="12.369"/>
+</testsuite>
