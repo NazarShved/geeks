@@ -23,6 +23,8 @@ public class GrouponAidana {
       // verifyPriceRangeInDealsOfTheDay(driver);
         locationVerificationInFeatured(driver);
         //priceRangeVerificationInFeatured(driver,1,1000);
+
+        //Hello World
     }
 
     //Click on "Popularity" and verify the default value
