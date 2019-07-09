@@ -51,6 +51,7 @@ public class TravelPage {
     }
 
     public void pickCity(String city) throws InterruptedException {
+        //Picking city field
 
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
