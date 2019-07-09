@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4e22bcff-d312-4595-ab1c-1b46f8f078d8" name="Default Changelist" comment="">
+=======
+    <list default="true" id="0cb5c426-b3a7-43e3-9947-739c8110b0f7" name="Default Changelist" comment="">
+>>>>>>> origin
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" afterDir="false" />
+>>>>>>> origin
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,6 +25,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
@@ -29,6 +38,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
               <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+=======
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+>>>>>>> origin
             </state>
           </provider>
         </entry>
@@ -41,50 +63,86 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" />
+=======
+        <option value="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" />
+>>>>>>> origin
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="680" />
     <option name="height" value="728" />
+=======
+    <option name="x" value="125" />
+    <option name="y" value="155" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
+>>>>>>> origin
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> origin
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geeks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
+<<<<<<< HEAD
               <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -117,16 +175,28 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="4e22bcff-d312-4595-ab1c-1b46f8f078d8" name="Default Changelist" comment="" />
       <created>1562644908299</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562644908299</updated>
+=======
+      <changelist id="0cb5c426-b3a7-43e3-9947-739c8110b0f7" name="Default Changelist" comment="" />
+      <created>1562643238935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562643238935</updated>
+>>>>>>> origin
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+=======
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+>>>>>>> origin
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -134,7 +204,11 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27051672" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+>>>>>>> origin
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -157,6 +231,7 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/geeks.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -164,6 +239,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+>>>>>>> origin
         </state>
       </provider>
     </entry>
