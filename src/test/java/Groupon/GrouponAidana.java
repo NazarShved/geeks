@@ -14,6 +14,8 @@ import java.util.concurrent.TimeUnit;
 public class GrouponAidana {
     public static void main(String[] args) throws InterruptedException {
 
+        //I put comment
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
