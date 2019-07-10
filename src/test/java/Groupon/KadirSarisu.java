@@ -12,6 +12,10 @@ import java.util.concurrent.TimeUnit;
 public class KadirSarisu {
     public static void main(String[] args) throws InterruptedException {
 
+
+        // hello geeks
+        //HELLO WORLD
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

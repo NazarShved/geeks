@@ -51,6 +51,7 @@ public class TravelPage {
     }
 
     public void pickCity(String city) throws InterruptedException {
+        //Picking city field
 
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
@@ -79,6 +80,7 @@ public class TravelPage {
             if (el.getText().equalsIgnoreCase(day)) {
                 el.click();
                 break;
+                //Nazar was here palying with code 
             }
             if (calendarBodyNumbers.indexOf(el) == calendarBodyNumbers.size() - 1) throw new Exception("Pick the rigth date");
         }
