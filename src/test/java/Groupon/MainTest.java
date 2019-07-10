@@ -138,11 +138,7 @@ public class MainTest {
         KadirSarisu.main(new String[0]);
     }
 
-    @Test
-    public void olhaTests() throws InterruptedException {
-        //Olha Koval refer to class migth not work properly from here
-        Olha.main(new String[0]);
-    }
+
 
 //    @Test
 //    public void aigerimTests() throws InterruptedException {
