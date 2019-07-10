@@ -3,6 +3,7 @@ package Groupon;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -39,6 +40,7 @@ public class TravelPage {
 
         js = (JavascriptExecutor) driver;
        PageFactory.initElements(driver, this);
+       wait = new WebDriverWait(driver, 5);
     }
 
 
@@ -50,11 +52,12 @@ public class TravelPage {
         driver.findElement(by).click();
     }
 
-    public void pickCity(String city) throws InterruptedException {
+    public void pickCity(String city){
 
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
-        Thread.sleep(2000);
+        //Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".ui-corner-all.ui-state-focus")));
         while (true) {
             if (driver.findElement(By.cssSelector(".ui-corner-all.ui-state-focus")).getText().toLowerCase().contains(city.toLowerCase())) {
                pickCityField.sendKeys(Keys.ENTER);
@@ -79,7 +82,6 @@ public class TravelPage {
             if (el.getText().equalsIgnoreCase(day)) {
                 el.click();
                 break;
-                //Nazar was here palying with code 
             }
             if (calendarBodyNumbers.indexOf(el) == calendarBodyNumbers.size() - 1) throw new Exception("Pick the rigth date");
         }
@@ -89,7 +91,7 @@ public class TravelPage {
 
         calendarOpen.click();
         pickDate(depMonth, depDay);
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         pickDate(retMonth, retDay);
 
     }
