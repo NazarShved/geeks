@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Olha {
+
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -18,6 +19,8 @@ public class Olha {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.groupon.com/");
 
+        // Comment
+        
         try {
             Thread.sleep(1000);
             driver.findElement(By.id("local-tab-link")).click();
