@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Olha {
+  
     static WebDriver driver;
     MainPage mp;
 
@@ -36,6 +37,7 @@ public class Olha {
     public void localCheckSelectedLocation() throws InterruptedException {
         Assert.assertTrue(checkSelectedLocation(driver));
     }
+
 
     @Test
     public void localCheckSelectedCategory() throws InterruptedException{
