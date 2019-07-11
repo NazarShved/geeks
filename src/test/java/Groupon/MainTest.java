@@ -1,5 +1,7 @@
 package Groupon;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,6 +20,7 @@ public class MainTest {
     static Properties prop;
     static TravelPage travel;
     static MainPage mp;
+    static WebDriverWait wait;
 
     @BeforeMethod
     public void setUp() throws InterruptedException, IOException {
@@ -25,12 +28,11 @@ public class MainTest {
         prop = new Properties();
         FileInputStream fis = new FileInputStream("Args.properties");
         prop.load(fis);
-
         mp = new MainPage();
-
         driver = mp.driver;
         js = (JavascriptExecutor) driver;
         Thread.sleep(2000);
+        this.wait = mp.wait;
     }
 
     @Test
@@ -40,7 +42,7 @@ public class MainTest {
         travel = new TravelPage(driver);
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"), prop.getProperty("retDateMonth"), prop.getProperty("retDateDay"));
 
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".total-nights")));
 
         String script = "return document.getElementsByClassName(\"icon-selection-box instrument\")[1].textContent;";
         String value = (String) js.executeScript(script);
@@ -87,14 +89,14 @@ public class MainTest {
     }
 
     @Test
-    public void searchFunc() throws Exception {
+    public void TravelSearchFunc() throws Exception {
         //Nazar
 
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
         travel.pickCity("san antonio");
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"), prop.getProperty("retDateMonth"), prop.getProperty("retDateDay"));
-        Thread.sleep(1000);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".total-nights")));
         travel.clickOnSearchIcon();
         Assert.assertTrue(travel.checkCity() < 5);
     }
@@ -102,51 +104,12 @@ public class MainTest {
     @Test
     public void searchSortByBrand() throws Exception {
         //Vusal
-
         mp.pickMenuOption(By.id("ls-search"));
         String brand = prop.getProperty("brandName");
         mp.searchSortByBrand("toys", brand);
-
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath("(//span[@class = 'featured-title c-txt-white'])[2]")),brand));
         Assert.assertTrue(mp.searchCheckResults(brand) <= 5);
     }
-
-
-
-
-    @Test
-    public void dealsOfTheDayVerPriceRange() throws InterruptedException {
-        //Aidana Class
-        Assert.assertTrue(GrouponAidana.verifyPriceRangeInDealsOfTheDay(driver));
-    }
-
-    @Test
-    public void featuredLocationVer() throws InterruptedException {
-        //Aidana Class
-        Assert.assertTrue(GrouponAidana.locationVerificationInFeatured(driver));
-    }
-
-    @Test
-    public void featuredPriceRangeVer() throws InterruptedException {
-        //Aidana Class
-        Assert.assertTrue(GrouponAidana.priceRangeVerificationInFeatured(driver,1,1000));
-    }
-
-    @Test
-    public void kadirTests() throws InterruptedException {
-        //Kadir Sarisu refer to class migth not work properly from here
-        KadirSarisu.main(new String[0]);
-    }
-
-
-
-//    @Test
-//    public void aigerimTests() throws InterruptedException {
-//        //Aigerim Attanbekova refer to class migth not work properly from here
-//        Aigerim.main(new String[0]);
-//    }
-
-
 
     @AfterMethod
     public void shutDown() {

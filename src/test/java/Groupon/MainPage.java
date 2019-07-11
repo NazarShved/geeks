@@ -1,20 +1,22 @@
 package Groupon;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 public class MainPage {
     //Vusal
+    //New Change
 
     @FindBy(id = "ls-search")
     WebElement mainSearchWindow;
@@ -43,33 +45,35 @@ public class MainPage {
         driver.manage().deleteAllCookies();
 
         driver.get("https://www.groupon.com/");
-        Thread.sleep(1000);
+
         PageFactory.initElements(driver, this);
+        wait = new WebDriverWait(driver, 5);
     }
 
     public void pickMenuOption(By by) throws InterruptedException {
-        try {
-            Thread.sleep(1000);
-            driver.findElement(by).click();
-        }catch (Exception e){
-            driver.findElement(By.id("nothx")).click();
-            Thread.sleep(1500);
-            driver.findElement(by).click();
-        }
-        Thread.sleep(2000);
+
+       try{
+           driver.findElement(by).click();
+       }catch (Exception e) {
+           driver.findElement(By.id("nothx")).click();
+           if (driver.findElements(By.id("nothx")).size() == 0) driver.findElement(by).click();
+       }
     }
 
     public void searchSortByBrand(String search, String brand) throws InterruptedException {
 
         mainSearchWindow.sendKeys(search);
+        wait.until(ExpectedConditions.elementToBeClickable(mainSearchButton));
+
         mainSearchButton.click();
-        Thread.sleep(5000);
+        wait.until(ExpectedConditions.elementToBeClickable(featuredBrandBox));
+
         featuredBrandBox.click();
-        Thread.sleep(3000);
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
+
 
         for (int i = 0; i < searchSortByBrandAllOptions.size(); i++) {
-            if (searchSortByBrandAllOptions.get(i).getText().toLowerCase().contains(brand)) {
-                Thread.sleep(500);
+            if (searchSortByBrandAllOptions.get(i).getText().toLowerCase().contains(brand.toLowerCase())) {
                 searchSortByBrandAllOptions.get(i).click();
                 break;
             }
@@ -80,8 +84,7 @@ public class MainPage {
 
         int countMis = 0;
         for(WebElement el : searchResultTitles){
-            System.out.println(el.getText());
-            if(!el.getText().toLowerCase().contains(check)) countMis++;
+            if(!el.getText().toLowerCase().contains(check.toLowerCase())) countMis++;
         }
         return countMis;
     }

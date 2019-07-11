@@ -172,14 +172,9 @@ public class GrouponAidana {
 
                 return false;
             }
-//             else {
-//                System.out.println("Location verification Failed");
-//                break;
-//            }
         }
         Thread.sleep(1000);
         System.out.println("============================");
-       // System.out.println("Location verification Passed");
         Thread.sleep(1000);
 
         //Using ready methods to verify default values for "Popularity" and "Ratings" and Sort by "Low to High"
@@ -259,12 +254,8 @@ public class GrouponAidana {
             priceWithout$Sign = price.getText().substring(1).replace(",", "");
             double priceDouble = Double.parseDouble(priceWithout$Sign);
             if (priceDouble < minPrice || priceDouble > maxPrice) {
-                //System.out.println(priceDouble);
                 return false;
             }
-//            } else {
-//                System.out.println("Price Range Verifiction Failed");
-//                break;
             }
 
         Thread.sleep(1000);
