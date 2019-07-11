@@ -111,73 +111,7 @@ public class MainTest {
         Assert.assertTrue(mp.searchCheckResults(brand) <= 5);
     }
 
-    @Test
-    public void thingsToDoSort() throws InterruptedException {
-        // Geeks, Nurlan. As User I should able choose Things TO Do Module, set up Price arrangement, Location,Popularity,
-        // Rating and Low to High.
 
-        mp.pickMenuOption(By.id("things-to-do-tab-link"));
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpPrice(driver, "100"));
-        Thread.sleep(800);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpLocationToMagnificentMile(driver));
-        Thread.sleep(800);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoPopularityByTopSeller(driver));
-        Thread.sleep(800);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpByRatingTop(driver));
-        Thread.sleep(1800);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSortByPriceLowToHigh(driver));
-
-    }
-
-    @Test
-    public void thingsToDoSortByArrAndLoc() throws InterruptedException {
-        // Geeks, Nurlan. As User I should able to go Things To DO Module and sort my search by:
-        // by different price arrangement, dif location.
-
-        mp.pickMenuOption(By.id("things-to-do-tab-link"));
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDo(driver));
-        Thread.sleep(2000);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpPrice(driver, "45"));
-        Thread.sleep(1400);
-
-        ThingsToDoPageNurlan.grouponThingsToDoSetUpLocationToChicago(driver);
-        Thread.sleep(1200);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoPopularityByTopSeller(driver));
-        Thread.sleep(1000);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpByRatingTop(driver));
-        Thread.sleep(1243);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSortByPriceLowToHigh(driver));
-
-    }
-
-    @Test
-    public void thingsToDoSortBySprtAndOutdrs() throws InterruptedException {
-        // Geeks. Nurlan. As user I should be able to go Things to do and search by Sports & Outdoors.
-        // Set up the price and location as well.
-
-        mp.pickMenuOption(By.id("things-to-do-tab-link"));
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDo(driver));
-        Thread.sleep(2000);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSportsAndOutdoors(driver));
-        Thread.sleep(500);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpPrice(driver, "50"));
-        Thread.sleep(200);
-
-        Assert.assertTrue(ThingsToDoPageNurlan.grouponThingsToDoSetUpLocationToOldTown(driver));
-
-    }
 
 
     @Test
@@ -204,11 +138,7 @@ public class MainTest {
         KadirSarisu.main(new String[0]);
     }
 
-    @Test
-    public void olhaTests() throws InterruptedException {
-        //Olha Koval refer to class migth not work properly from here
-        Olha.main(new String[0]);
-    }
+
 
 //    @Test
 //    public void aigerimTests() throws InterruptedException {
