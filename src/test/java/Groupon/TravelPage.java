@@ -52,11 +52,12 @@ public class TravelPage {
         driver.findElement(by).click();
     }
 
+
     public void pickCity(String city){
 
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
-        //Thread.sleep(2000);
+
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".ui-corner-all.ui-state-focus")));
         while (true) {
             if (driver.findElement(By.cssSelector(".ui-corner-all.ui-state-focus")).getText().toLowerCase().contains(city.toLowerCase())) {
@@ -91,21 +92,20 @@ public class TravelPage {
 
         calendarOpen.click();
         pickDate(depMonth, depDay);
-        //Thread.sleep(1000);
         pickDate(retMonth, retDay);
 
     }
 
 
 
-    public  int checkCity() throws InterruptedException {
+    public  int checkCity() {
 
         js = (JavascriptExecutor) driver;
         String script = "return document.getElementsByClassName(\"ui-autocomplete-input\")[0].value;";
         String value = (String) js.executeScript(script);
         String city = value.substring(0, value.indexOf(","));
 
-        Thread.sleep(3000);
+        wait.until(ExpectedConditions.elementToBeClickable(searchResults.get(2)));
         int countMissCity = 0;
         for (WebElement el : searchResults) {
             if (el.getText().isEmpty()) continue;

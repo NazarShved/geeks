@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c29d32e-0711-4235-ab16-67816ad6a8e4" name="Default Changelist" comment="original" />
+<<<<<<< HEAD
+    <list default="true" id="4e22bcff-d312-4595-ab1c-1b46f8f078d8" name="Default Changelist" comment="">
+=======
+    <list default="true" id="0cb5c426-b3a7-43e3-9947-739c8110b0f7" name="Default Changelist" comment="">
+>>>>>>> origin
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" afterDir="false" />
+>>>>>>> origin
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,212 +25,124 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/geeks.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="185" selection-start-line="185" selection-end-line="185" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TestNg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Olha.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-867">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+            <state relative-caret-position="69">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+=======
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="36" column="82" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="82" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="216" column="67" lean-forward="true" selection-start-line="216" selection-start-column="67" selection-end-line="216" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Args.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="170">
+              <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+>>>>>>> origin
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Nazar" />
-      </list>
-    </option>
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/kayak/com/Slider.java" />
-        <option value="$PROJECT_DIR$/testNg.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/kayak/com/Try.java" />
-        <option value="$PROJECT_DIR$/src/test/java/kayak/com/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/kayak/com/GrouponTripsCalendar.java" />
-        <option value="$PROJECT_DIR$/Args.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/Try.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/ThingsToDoPageNurlan.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/TravelPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/GrouponAidana.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/KadirSarisu.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/Olha.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/GrouponTripsCalendar.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/com/MainTestSuite.java" />
-        <option value="$PROJECT_DIR$/TestNg" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/MainTestSuite.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+=======
         <option value="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java" />
+>>>>>>> origin
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="680" />
+    <option name="height" value="728" />
+=======
+    <option name="x" value="125" />
+    <option name="y" value="155" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
+>>>>>>> origin
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="width" value="3852" />
-    <option name="height" value="2166" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+>>>>>>> origin
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="geeks" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
+              <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="geeks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geeks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="geeks" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
+              <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="geeks" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
+              <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="geeks" type="b2602c69:ProjectViewProjectNode" />
+<<<<<<< HEAD
+              <item name="Geeks" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="chicagob11" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> origin
               <item name="geeks" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -226,19 +153,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Shvednazar994\geeks\src\test\java\Groupon" />
-      <recent name="C:\Users\Shvednazar994\geeks" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -252,311 +170,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainTest">
-    <configuration name="MainTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="geeks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Groupon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Groupon" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.MainTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTestSuite" type="TestNG" nameIsGenerated="true">
-      <module name="geeks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Groupon.com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="Groupon.com" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.com.MainTestSuite" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTestSuite.searchSortByBrand" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="geeks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Groupon.com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Groupon.com" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.com.MainTestSuite" />
-      <option name="METHOD_NAME" value="searchSortByBrand" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.olhaTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="geeks" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Groupon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Groupon" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.MainTest" />
-      <option name="METHOD_NAME" value="olhaTests" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt; (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="geeks" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="geeks" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.MainTest" />
-        <item itemvalue="TestNG.MainTest.olhaTests" />
-        <item itemvalue="TestNG.&lt;default&gt; (1)" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.MainTestSuite.searchSortByBrand" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7c29d32e-0711-4235-ab16-67816ad6a8e4" name="Default Changelist" comment="" />
-      <created>1562039969696</created>
+<<<<<<< HEAD
+      <changelist id="4e22bcff-d312-4595-ab1c-1b46f8f078d8" name="Default Changelist" comment="" />
+      <created>1562644908299</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1562039969696</updated>
+      <updated>1562644908299</updated>
+=======
+      <changelist id="0cb5c426-b3a7-43e3-9947-739c8110b0f7" name="Default Changelist" comment="" />
+      <created>1562643238935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562643238935</updated>
+>>>>>>> origin
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="GrouponTripsCalendar_featuredLocationVer - 2019.07.05 at 22h 42m 08s.xml">
-      <configuration name="GrouponTripsCalendar.featuredLocationVer" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GrouponTripsCalendar_featuredLocationVer - 2019.07.05 at 22h 53m 51s.xml">
-      <configuration name="GrouponTripsCalendar.featuredLocationVer" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GrouponTripsCalendar_featuredPriceRangeVer - 2019.07.05 at 22h 55m 27s.xml">
-      <configuration name="GrouponTripsCalendar.featuredPriceRangeVer" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GrouponTripsCalendar_calendarFuncDepAndRet - 2019.07.05 at 23h 09m 11s.xml">
-      <configuration name="GrouponTripsCalendar.calendarFuncDepAndRet" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GrouponTripsCalendar_calendarFuncDepAndRet - 2019.07.05 at 23h 10m 45s.xml">
-      <configuration name="GrouponTripsCalendar.calendarFuncDepAndRet" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GrouponTripsCalendar_searchSortByBrand - 2019.07.05 at 23h 11m 27s.xml">
-      <configuration name="GrouponTripsCalendar.searchSortByBrand" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default_ - 2019.07.05 at 23h 32m 40s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default__(1) - 2019.07.05 at 23h 39m 19s.xml">
-      <configuration name="&lt;default&gt; (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainTestSuite_olhaTests - 2019.07.05 at 23h 41m 33s.xml">
-      <configuration name="MainTestSuite.olhaTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainTest - 2019.07.08 at 19h 36m 14s.xml">
-      <configuration name="MainTest" configurationId="TestNG" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1284" height="722" extended-state="0" />
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+=======
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+>>>>>>> origin
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21009772" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27051672" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+>>>>>>> origin
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4516129" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39938557" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49918568" weight="0.32996634" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.497557" visible="true" weight="0.36700338" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502443" side_tool="true" visible="true" weight="0.36700338" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.499183" weight="0.36332768" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven-2 Build" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="original" />
-    <option name="LAST_COMMIT_MESSAGE" value="original" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/test-classes/kayak/com/MainPage.class" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/com/Slider.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TestNg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Args.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="36" column="82" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="216" column="67" lean-forward="true" selection-start-line="216" selection-start-column="67" selection-end-line="216" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Olha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/geeks.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
+        <state relative-caret-position="69">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="185" selection-start-line="185" selection-end-line="185" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+>>>>>>> origin
         </state>
       </provider>
     </entry>

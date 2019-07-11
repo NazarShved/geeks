@@ -4,6 +4,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/Shvednazar994/geeks">
     <classes>
         <class name="Groupon.MainTest"/>
+        <class name="Groupon.ThingsToDoPageNurlan"/>
     </classes>
 </test>
 </suite>
