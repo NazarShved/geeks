@@ -4,10 +4,12 @@
     <test verbose="2" preserve-order="true" name="C:/Users/Shvednazar994/geeks">
         <classes>
             <class name="Groupon.ThingsToDoPageNurlan"/>
-            <class name="Groupon.MainTest"/>
-            <class name="Groupon.GrouponAidana"/>
-            <class name="Groupon.Olha"/>
-            <class name="Groupon.KadirSarisu"/>
+            <class name="Groupon.TravelNazar"/>
+            <class name="Groupon.FeaturedAidana"/>
+            <class name="Groupon.LocalOlha"/>
+            <class name="Groupon.GoodsKadir"/>
+            <class name="Groupon.BeautyAndSpaAigerim"/>
+            <class name="Groupon.CouponsVusal"></class>
         </classes>
     </test>
 </suite>

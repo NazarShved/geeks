@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class GrouponAidana {
+public class FeaturedAidana {
 
     static WebDriver driver;
     static MainPage mp;
@@ -102,7 +102,7 @@ public class GrouponAidana {
         Thread.sleep(1000);
 
         for (WebElement productPrice : priceList) {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
             ArrayList<String> actualPriceList = new ArrayList();
             actualPriceList.add(productPrice.getText());
             Thread.sleep(1000);

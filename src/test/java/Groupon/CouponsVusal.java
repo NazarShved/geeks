@@ -2,6 +2,7 @@ package Groupon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -32,15 +33,14 @@ public class CouponsVusal {
     // if number of coupons listed are matching "All coupons" number
     @Test
     public void searchCouponsAdidas(){
-        // if(driver.findElement(By.className("d")).isDisplayed()) driver.findElement(By.className("d")).click();
+
         Assert.assertTrue(driver.getTitle().contains("adidas"));
     }
     // As a user I want to see if All coupons function
     // showing the same numbers as coupons real numbers on the page
-    @Test(priority = 1)
+    @Test
     public void checkNumberOFCoupons()throws InterruptedException{
         Thread.sleep(2000);
-        //String allCoupon = driver.findElement(By.xpath("//button[@class='filter btn-small hover']")).getText();
         String allCoupon = driver.findElement(By.xpath("//*[contains(text(),'All Coupons')]")).getText();
         String res = allCoupon.substring(allCoupon.indexOf("(") + 1, allCoupon.length()-1);
         int numOfAllCoupons = Integer.parseInt(res);
@@ -57,7 +57,7 @@ public class CouponsVusal {
 
     }
     // As a user when press on coupon want to see if it goes to the Adidas original website
-    @Test(priority = 2)
+    @Test
     public static void checkLinks()throws InterruptedException {
         int countLinks = 0;
         List<WebElement> coupons = driver.findElements(By.xpath("//div[@class='nine columns']/div //li"));
@@ -69,8 +69,9 @@ public class CouponsVusal {
             Iterator<String> it = wndws.iterator();
             it.next();
             String newW = it.next();
-            Thread.sleep(15000);
+            //Thread.sleep(15000);
             driver.switchTo().window(newW);
+            mp.wait.until(ExpectedConditions.urlContains("www.adidas.com"));
 //           System.out.println(driver.getCurrentUrl());
             if(!driver.getCurrentUrl().toLowerCase().contains("adidas")) countLinks++;
             driver.close();

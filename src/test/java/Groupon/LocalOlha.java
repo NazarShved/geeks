@@ -15,7 +15,7 @@ import java.beans.IntrospectionException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class Olha {
+public class LocalOlha {
   
     static WebDriver driver;
     MainPage mp;
@@ -66,6 +66,7 @@ public class Olha {
         driver.findElement(By.xpath("(//ul[@class='refinement-list']/li/a)[3]")).click();
         Thread.sleep(1500);
         driver.findElement(By.id("rangeFilters-arrow")).click();
+        Thread.sleep(1500);
         driver.findElement(By.xpath("//input[@title='Price min']")).sendKeys(Keys.BACK_SPACE);
         Thread.sleep(1500);
         String strMin = "" + minPrice;
@@ -135,7 +136,7 @@ public class Olha {
     /**
      * As a user I should be able to verify the selected category and brand*/
     public static boolean checkSelectedCategory(WebDriver driver) throws InterruptedException{
-        Thread.sleep(1500);
+        Thread.sleep(2500);
         driver.findElement(By.xpath("//div[@id='featured-category-box']")).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("(//ul[@class='refinement-list']/li/a)[2]")).click();
@@ -150,7 +151,7 @@ public class Olha {
     public static boolean checkSelectedBrand(WebDriver driver) throws InterruptedException{
         Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@id='featured-brand-box']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(1500);
         driver.findElement(By.xpath("(//*[@class='brand-checkbox-label'])[2]")).click();
         String chosenBrand = driver.findElement(By.xpath("//div//span[@class='featured-title c-txt-white']")).getText();
         return chosenBrand.equals("Contec Medical Systems");

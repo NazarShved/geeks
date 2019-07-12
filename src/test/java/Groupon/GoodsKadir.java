@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class KadirSarisu {
+public class GoodsKadir {
 
     static WebDriver driver;
     static MainPage mp;

@@ -25,7 +25,7 @@ public class ThingsToDoPageNurlan {
     // Geeks, Nurlan. As User I should able choose Things TO Do Module, set up Price arrangement, Location,Popularity,
     // Rating and Low to High.
 
-    @Test(priority = 1)
+    @Test
     public void test1() throws InterruptedException{
 
        // WebDriverManager.chromedriver().setup();
@@ -227,16 +227,15 @@ public class ThingsToDoPageNurlan {
     public static void grouponThingsToDoSetUpPrice(WebDriver driver, String price) throws InterruptedException {
 
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Thread.sleep(2500);
+        Thread.sleep(500);
         driver.findElement(By.id("rangeFilters-arrow")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@title='Price max']")).sendKeys(Keys.BACK_SPACE);
         driver.findElement(By.xpath("//input[@title='Price max']")).sendKeys(Keys.BACK_SPACE);
         driver.findElement(By.xpath("//input[@title='Price max']")).sendKeys(Keys.BACK_SPACE);
         driver.findElement(By.xpath("//input[@title='Price max']")).sendKeys(Keys.BACK_SPACE);
         driver.findElement(By.xpath("//input[@title='Price max']")).sendKeys(price + Keys.ENTER);
-
-        String priceRange = driver.findElement(By.xpath("(//div//span)[30]")).getText();
+        String priceRange = driver.findElement(By.cssSelector("#featured-rangeFilters-box")).getText();
         Assert.assertEquals(priceRange, "Price", "Verification of Price Range is FAILED");
 
     }

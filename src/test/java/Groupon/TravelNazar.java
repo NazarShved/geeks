@@ -10,11 +10,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import static Groupon.GrouponAidana.*;
-import static Groupon.ThingsToDoPageNurlan.*;
 
-
-public class MainTest {
+public class TravelNazar {
     static WebDriver driver;
     static JavascriptExecutor js;
     static Properties prop;
@@ -35,7 +32,8 @@ public class MainTest {
 
     @Test
     public void calendarFuncDepAndRet() throws Exception {
-        //Nazar
+        //As a user I want to be able to pick my desired departure and return dates.
+
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"), prop.getProperty("retDateMonth"), prop.getProperty("retDateDay"));
@@ -55,7 +53,7 @@ public class MainTest {
 
     @Test
     public void calendarFuncOnlyDep() throws Exception {
-        //Nazar
+        //As a user I want to be able to pick my desired departure date.
         
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
@@ -74,7 +72,7 @@ public class MainTest {
 
     @Test
     public void enterCityWithAutoSug() throws Exception {
-        //Nazar
+        //As a user I want to recive suggestions while I'm entering my City in the search box.
 
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
@@ -88,7 +86,7 @@ public class MainTest {
 
     @Test
     public void TravelSearchFunc() throws Exception {
-        //Nazar
+        //As a user Iwant to be able to search for hotels ,by my desired city, that are avilable at my desired date.
 
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
@@ -101,7 +99,8 @@ public class MainTest {
 
     @Test
     public void searchSortByBrand() throws Exception {
-        //Nazar
+   //As a user I want to be able to sort my search results by the brand name
+
         mp.pickMenuOption(By.id("ls-search"));
         String brand = prop.getProperty("brandName");
         mp.searchSortByBrand("toys", brand);
