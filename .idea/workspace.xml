@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbeb0233-c142-484c-8d9e-7d44c3823ce0" name="Default Changelist" comment="new code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/Olha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/Olha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/Aigerim.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Groupon/Aigerim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/GrouponAidana.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Groupon/GrouponAidana.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/Olha.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Groupon/Olha.class" afterDir="false" />
-    </list>
+    <list default="true" id="fbeb0233-c142-484c-8d9e-7d44c3823ce0" name="Default Changelist" comment="new code" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="155" selection-start-line="155" selection-end-line="156" />
+            <state relative-caret-position="225">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#7950#7951#0" expanded="true" />
                 <element signature="e#7980#7981#0" expanded="true" />
@@ -41,9 +28,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-172">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1537">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -242,13 +260,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -256,10 +267,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="155" selection-start-line="155" selection-end-line="156" />
+        <state relative-caret-position="225">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#7950#7951#0" expanded="true" />
             <element signature="e#7980#7981#0" expanded="true" />
@@ -267,8 +285,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1537">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
