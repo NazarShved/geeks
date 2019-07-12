@@ -56,7 +56,7 @@ public class MainPage {
            driver.findElement(by).click();
        }catch (Exception e) {
            driver.findElement(By.id("nothx")).click();
-           Thread.sleep(1500);
+           if (driver.findElements(By.id("nothx1")).size() == 0) driver.findElement(by).click();
            driver.findElement(by).click();
        }
     }
