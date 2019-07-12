@@ -60,6 +60,7 @@ public class Olha {
      * As a user I want to be able find items by the given minimum and maximum prices*/
 
     public static boolean sortingByMinAndMaxPrice(WebDriver driver, int minPrice, int maxPrice) throws InterruptedException{
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@id='featured-category-box']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//ul[@class='refinement-list']/li/a)[3]")).click();
@@ -107,6 +108,7 @@ public class Olha {
     /**
      * As a user I should be able to verify if all the results are in the given location*/
     public static boolean checkSelectedLocation(WebDriver driver) throws InterruptedException{
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//div[@id='featured-category-box']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//ul[@class='refinement-list']/li/a)[3]")).click();
@@ -133,6 +135,7 @@ public class Olha {
     /**
      * As a user I should be able to verify the selected category and brand*/
     public static boolean checkSelectedCategory(WebDriver driver) throws InterruptedException{
+        Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@id='featured-category-box']")).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("(//ul[@class='refinement-list']/li/a)[2]")).click();
@@ -145,6 +148,7 @@ public class Olha {
     /**
      * As a user I should be able to verify the selected brand*/
     public static boolean checkSelectedBrand(WebDriver driver) throws InterruptedException{
+        Thread.sleep(1500);
         driver.findElement(By.xpath("//div[@id='featured-brand-box']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//*[@class='brand-checkbox-label'])[2]")).click();

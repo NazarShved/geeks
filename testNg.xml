@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Shvednazar994/geeks">
+        <classes>
+            <class name="Groupon.ThingsToDoPageNurlan"/>
+            <class name="Groupon.MainTest"/>
+            <class name="Groupon.GrouponAidana"/>
+            <class name="Groupon.Olha"/>
+        </classes>
+    </test>
+</suite>

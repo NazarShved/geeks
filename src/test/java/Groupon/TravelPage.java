@@ -55,6 +55,7 @@ public class TravelPage {
 
     public void pickCity(String city){
 
+        wait.until(ExpectedConditions.elementToBeClickable(pickCityField));
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
 
