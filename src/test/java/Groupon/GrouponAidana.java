@@ -142,6 +142,7 @@ public class GrouponAidana {
         mp.pickMenuOption(By.id("home-tab-link"));
 
         //Click on Restaraunts Button
+        Thread.sleep(2000);
         driver.findElement(By.xpath("(//div[@class='cui-nav-icon-image-wrapper'])[3]")).click();
         Thread.sleep(2000);
         //Click on Food and Drinks
@@ -153,10 +154,10 @@ public class GrouponAidana {
         //Click on "Location"
         driver.findElement(By.id("featured-location-box")).click();
         Thread.sleep(2000);
-        //Choose "Chicago"// any City
-       WebElement city = driver.findElement(By.xpath("//div[@class = 'refinement-list']/div[3]"));
-       String cityName = city.getText();
-        System.out.println(cityName);
+        //Choose "Chicago"
+      // String cityName = driver.findElement(By.id("featured-location-chicago-label")).getText();
+        driver.findElement(By.id("featured-location-chicago-label")).click();
+
         Thread.sleep(2000);
 
         //Verify all the result are within the chosen location ("Chicago)
@@ -168,7 +169,7 @@ public class GrouponAidana {
         for (WebElement location : locations) {
             System.out.println(location.getText());
 
-            if (!location.getText().contains(cityName)) {
+            if (!location.getText().toLowerCase().contains("chicago")) {
 
                 return false;
             }
@@ -235,8 +236,8 @@ public class GrouponAidana {
         driver.findElement(By.id("featured-location-box")).click();
         Thread.sleep(2000);
         //Choose "Chicago"
-       // driver.findElement(By.id("featured-location-chicago-label")).click();
-        driver.findElement(By.xpath("//div[@class = 'refinement-list']/div[3]"));
+        driver.findElement(By.id("featured-location-chicago-label")).click();
+       // driver.findElement(By.xpath("//div[@class = 'refinement-list']/div[3]"));
         Thread.sleep(1000);
 
         //Using ready methods to verify default values for "Popularity" and "Ratings" and Sort by "Low to High"

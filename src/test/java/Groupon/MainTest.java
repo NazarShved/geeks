@@ -24,14 +24,12 @@ public class MainTest {
 
     @BeforeMethod
     public void setUp() throws InterruptedException, IOException {
-        //Vussal
         prop = new Properties();
         FileInputStream fis = new FileInputStream("Args.properties");
         prop.load(fis);
         mp = new MainPage();
         driver = mp.driver;
         js = (JavascriptExecutor) driver;
-        Thread.sleep(2000);
         this.wait = mp.wait;
     }
 
@@ -103,7 +101,7 @@ public class MainTest {
 
     @Test
     public void searchSortByBrand() throws Exception {
-        //Vusal
+        //Nazar
         mp.pickMenuOption(By.id("ls-search"));
         String brand = prop.getProperty("brandName");
         mp.searchSortByBrand("toys", brand);

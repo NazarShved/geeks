@@ -24,7 +24,7 @@ public class MainPage {
     @FindBy(id ="ls-header-search-button")
     WebElement mainSearchButton;
 
-    @FindBy(id = "featured-brand-box")
+    @FindBy(id = "brand-arrow")
     WebElement featuredBrandBox;
 
     @FindBy(css = ".refinement")
@@ -37,36 +37,39 @@ public class MainPage {
     WebDriverWait wait;
     JavascriptExecutor js;
 
-    public MainPage() throws InterruptedException {
+    public MainPage(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(7, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
 
         driver.get("https://www.groupon.com/");
 
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, 5);
+        wait = new WebDriverWait(driver, 10);
     }
 
-    public void pickMenuOption(By by) throws InterruptedException {
+    public void pickMenuOption(By by){
 
        try{
            driver.findElement(by).click();
        }catch (Exception e) {
+           wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nothx")));
            driver.findElement(By.id("nothx")).click();
-           if (driver.findElements(By.id("nothx")).size() == 0) driver.findElement(by).click();
+           if (driver.findElements(By.id("nothx1")).size() == 0) driver.findElement(by).click();
        }
     }
 
     public void searchSortByBrand(String search, String brand) throws InterruptedException {
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
         mainSearchWindow.sendKeys(search);
         wait.until(ExpectedConditions.elementToBeClickable(mainSearchButton));
-
         mainSearchButton.click();
-        wait.until(ExpectedConditions.elementToBeClickable(featuredBrandBox));
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
+        wait.until(ExpectedConditions.visibilityOfAllElements(searchResultTitles));
 
         featuredBrandBox.click();
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
