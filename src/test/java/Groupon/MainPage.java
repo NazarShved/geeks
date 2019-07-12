@@ -53,10 +53,9 @@ public class MainPage {
     public void pickMenuOption(By by){
 
        try{
-           wait.until(ExpectedConditions.visibilityOfElementLocated(by));
            driver.findElement(by).click();
        }catch (Exception e) {
-           wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+           wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nothx")));
            driver.findElement(By.id("nothx")).click();
            if (driver.findElements(By.id("nothx1")).size() == 0) driver.findElement(by).click();
        }
@@ -64,15 +63,16 @@ public class MainPage {
 
     public void searchSortByBrand(String search, String brand) throws InterruptedException {
 
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
         mainSearchWindow.sendKeys(search);
-
         wait.until(ExpectedConditions.elementToBeClickable(mainSearchButton));
         mainSearchButton.click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
-        featuredBrandBox.click();
+        wait.until(ExpectedConditions.visibilityOfAllElements(searchResultTitles));
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".refinement")));
+        featuredBrandBox.click();
+        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
 
 
         for (int i = 0; i < searchSortByBrandAllOptions.size(); i++) {

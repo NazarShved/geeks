@@ -7,6 +7,7 @@
             <class name="Groupon.MainTest"/>
             <class name="Groupon.GrouponAidana"/>
             <class name="Groupon.Olha"/>
+            <class name="Groupon.KadirSarisu"/>
         </classes>
     </test>
 </suite>

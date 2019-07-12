@@ -104,7 +104,7 @@ public class ThingsToDoPageNurlan {
         Thread.sleep(2000);
 
         Assert.assertTrue(grouponThingsToDoSportsAndOutdoors(driver));
-        Thread.sleep(1500);
+        Thread.sleep(2500);
 
         grouponThingsToDoSetUpPrice(driver, "50");
         Thread.sleep(1000);
