@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbeb0233-c142-484c-8d9e-7d44c3823ce0" name="Default Changelist" comment="new code" />
+    <list default="true" id="554c6a0e-c9bc-4e20-969a-2cbabb07519b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,55 +15,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Olha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#7950#7951#0" expanded="true" />
-                <element signature="e#7980#7981#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-172">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1537">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="221">
+              <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -67,17 +32,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="140">
+              <caret line="194" selection-start-line="194" selection-end-line="195" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="340">
+              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -90,21 +64,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="734" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="125" />
+    <option name="y" value="155" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,11 +118,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,8 +136,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Aigerim">
-    <configuration name="Aigerim" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.KadirSarisu">
+    <configuration name="KadirSarisu" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="chicagob11" />
       <extension name="coverage">
         <pattern>
@@ -171,7 +146,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Groupon" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.Aigerim" />
+      <option name="MAIN_CLASS_NAME" value="Groupon.KadirSarisu" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -179,7 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GrouponAidana" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="KadirSarisu.sortingByCustomerRating" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="chicagob11" />
       <extension name="coverage">
         <pattern>
@@ -188,8 +163,45 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Groupon" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.GrouponAidana" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Groupon.KadirSarisu" />
+      <option name="METHOD_NAME" value="sortingByCustomerRating" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KadirSarisu.sortingByPriceFromHighToLow" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="chicagob11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Groupon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Groupon" />
+      <option name="MAIN_CLASS_NAME" value="Groupon.KadirSarisu" />
+      <option name="METHOD_NAME" value="sortingByPriceFromHighToLow" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KadirSarisu.sortingByPriceLowToHigh" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="chicagob11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Groupon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Groupon" />
+      <option name="MAIN_CLASS_NAME" value="Groupon.KadirSarisu" />
+      <option name="METHOD_NAME" value="sortingByPriceLowToHigh" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -198,8 +210,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Aigerim" />
-        <item itemvalue="TestNG.GrouponAidana" />
+        <item itemvalue="TestNG.KadirSarisu" />
+        <item itemvalue="TestNG.KadirSarisu.sortingByPriceLowToHigh" />
+        <item itemvalue="TestNG.KadirSarisu.sortingByCustomerRating" />
+        <item itemvalue="TestNG.KadirSarisu.sortingByPriceFromHighToLow" />
       </list>
     </recent_temporary>
   </component>
@@ -208,108 +222,104 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fbeb0233-c142-484c-8d9e-7d44c3823ce0" name="Default Changelist" comment="" />
-      <created>1562900600969</created>
+      <changelist id="554c6a0e-c9bc-4e20-969a-2cbabb07519b" name="Default Changelist" comment="" />
+      <created>1562899414992</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1562900600969</updated>
+      <updated>1562899414992</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GrouponAidana - 2019.07.11 at 22h 10m 14s.xml">
-      <configuration name="GrouponAidana" configurationId="TestNG" />
+    <history-entry file="KadirSarisu_sortingByPriceFromHighToLow - 2019.07.11 at 23h 08m 30s.xml">
+      <configuration name="KadirSarisu.sortingByPriceFromHighToLow" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Aigerim - 2019.07.12 at 00h 04m 22s.xml">
-      <configuration name="Aigerim" configurationId="TestNG" />
+    <history-entry file="KadirSarisu_sortingByPriceFromHighToLow - 2019.07.11 at 23h 10m 44s.xml">
+      <configuration name="KadirSarisu.sortingByPriceFromHighToLow" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu - 2019.07.11 at 23h 12m 16s.xml">
+      <configuration name="KadirSarisu" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu - 2019.07.11 at 23h 13m 59s.xml">
+      <configuration name="KadirSarisu" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu - 2019.07.11 at 23h 15m 48s.xml">
+      <configuration name="KadirSarisu" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu - 2019.07.11 at 23h 18m 14s.xml">
+      <configuration name="KadirSarisu" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu_sortingByPriceFromHighToLow - 2019.07.11 at 23h 21m 41s.xml">
+      <configuration name="KadirSarisu.sortingByPriceFromHighToLow" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu_sortingByCustomerRating - 2019.07.11 at 23h 23m 46s.xml">
+      <configuration name="KadirSarisu.sortingByCustomerRating" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu_sortingByPriceLowToHigh - 2019.07.11 at 23h 24m 18s.xml">
+      <configuration name="KadirSarisu.sortingByPriceLowToHigh" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="KadirSarisu - 2019.07.11 at 23h 25m 54s.xml">
+      <configuration name="KadirSarisu" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="734" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.253125" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3182504" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.51876676" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32730016" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#7950#7951#0" expanded="true" />
-            <element signature="e#7980#7981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="140">
+          <caret line="194" selection-start-line="194" selection-end-line="195" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/Olha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1537">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="340">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
