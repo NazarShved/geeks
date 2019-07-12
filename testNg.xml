@@ -8,6 +8,7 @@
             <class name="Groupon.GrouponAidana"/>
             <class name="Groupon.Olha"/>
             <class name="Groupon.KadirSarisu"/>
+            <class name="Groupon.Aigerim"/>
         </classes>
     </test>
 </suite>

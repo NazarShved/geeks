@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -16,62 +17,36 @@ import java.util.concurrent.TimeUnit;
 
 public class Aigerim {
 
-        WebDriver driver;
+      static WebDriver driver;
+      static MainPage mp;
 
 
         @BeforeMethod
         public void setUp() throws InterruptedException {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-            driver.manage().window().fullscreen();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            mp=new MainPage();
+            this.driver =mp.driver;
 
-            driver.get("https://groupon.com");
-
-            try {
-                driver.findElement(By.id("ls-location")).click();
-
-            } catch (Exception e) {
-                driver.findElement(By.id("nothx")).click();
-
-                Thread.sleep(1000);
-                driver.findElement(By.id("ls-location")).click();
-                Thread.sleep(1000);
-            }
+            mp.pickMenuOption(By.id("beauty-and-spas-tab-link"));
+            Thread.sleep(2000);
         }
 
 
-        @Test(priority = 1)
+        @Test
         public void GrouponBeautySpa() throws InterruptedException {
 
             // as a user i should be able to see all the spas on the webpage starting from $1-$50  from "SPAS" link Aigerim;
 
-
-            driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-
             // setting location for "NYC";
 
-            driver.findElement(By.id("ls-location")).clear();
-            driver.findElement(By.id("beauty-and-spas-tab-link")).click();
-            driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).clear();
-            driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).sendKeys("New York City" + Keys.ENTER);
-            WebElement location = driver.findElement(By.xpath("//input[@id='ls-location']"));
-            location.sendKeys("New York City" + Keys.ENTER);
-
+            mp.mainSearchChangeCity("New York City");
             // choosing Beauty and Spas link;
 
-            Thread.sleep(2000);
-            WebElement BeautyAndSpaMain = driver.findElement(By.xpath("//ul/li[@id='beauty-and-spas-tab']/a"));
-            //System.out.println(BeautyAndSpaMain.getText());
-            Thread.sleep(2000);
-            BeautyAndSpaMain.click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
+
             WebElement beautyAndSpaOptionLink = driver.findElement(By.id("featured-category-box"));
             Assert.assertTrue(beautyAndSpaOptionLink.isDisplayed(), "The message is not displayed");
 
-
-            WebElement arrowLink = driver.findElement(By.xpath("//span[@id='category-arrow']"));
-            arrowLink.click();
+            driver.findElement(By.xpath("//span[@id='category-arrow']")).click();
 
 
             // choosing 'SPA' link;
@@ -110,28 +85,14 @@ public class Aigerim {
         }
 
 
-        @Test(priority = 2)
-
-
+        @Test
         public void GrouponBeautyAndSpaTest2() throws InterruptedException {
 
             // as a user i should be able to see all the hair salons options from "HAIR" link by topseller and highest ratings;
-
-            driver.findElement(By.id("ls-location")).clear();
-            driver.findElement(By.id("beauty-and-spas-tab-link")).click();
-            Thread.sleep(2000);
-            driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).clear();
-            driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).sendKeys("New York City" + Keys.ENTER);
-            WebElement location = driver.findElement(By.xpath("//input[@id='ls-location']"));
-            location.sendKeys("New York City" + Keys.ENTER);
+            mp.mainSearchChangeCity("New York City");
 
             // choosing Beauty and Spas link;
 
-            Thread.sleep(2000);
-            WebElement BeautyAndSpaMain = driver.findElement(By.id("beauty-and-spas-tab-link"));
-            //System.out.println(BeautyAndSpaMain.getText());
-            Thread.sleep(2000);
-            BeautyAndSpaMain.click();
             Thread.sleep(2000);
             WebElement beautyAndSpaOptionLink = driver.findElement(By.id("featured-category-box"));
             Assert.assertTrue(beautyAndSpaOptionLink.isDisplayed(), "The message is not displayed");
@@ -146,9 +107,6 @@ public class Aigerim {
             Thread.sleep(2000);
             WebElement hairLink = driver.findElement(By.xpath("(//label[@class='name truncated'])[5]"));
             hairLink.click();
-            // driver.findElement(By.xpath("//span[@class='featured-title c-txt-white']"));
-
-            //  Assert.assertEquals(hairLink.getFirstSelectedOption(), "Hair & Styling ", "Hair and Styling link is FAILED");
 
             Thread.sleep(5000);
 
@@ -168,8 +126,6 @@ public class Aigerim {
 
             // by ratings link;
 
-            // WebElement ratings = driver.findElement(By.xpath("(//span[@class='featured-title c-txt-black'])[3]"));
-            //ratings.click();
             Thread.sleep(3000);
             driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
             driver.findElement(By.id("rating-arrow")).click();
@@ -182,28 +138,13 @@ public class Aigerim {
 
         }
 
+    // as a user i should be able to click on Nails option, and also see Blog window
 
-        @Test(priority = 3)
-        // as a user i should be able to click on Nails option, and also see Blog window
-
+        @Test
         public void GrouponBeautyAndSpa3() throws InterruptedException {
 
-            driver.findElement(By.id("ls-location")).clear();
-            driver.findElement(By.id("beauty-and-spas-tab-link")).click();
-            Thread.sleep(2000);
-            driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).clear();
-            driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).sendKeys("New York City" + Keys.ENTER);
-            WebElement location = driver.findElement(By.xpath("//input[@id='ls-location']"));
-            location.sendKeys("New York City" + Keys.ENTER);
-
-            // choosing Beauty and Spas link;
-
-            Thread.sleep(2000);
-            WebElement BeautyAndSpaMain = driver.findElement(By.id("beauty-and-spas-tab-link"));
-            //System.out.println(BeautyAndSpaMain.getText());
-            Thread.sleep(2000);
-            BeautyAndSpaMain.click();
-            Thread.sleep(2000);
+            mp.mainSearchChangeCity("New York City");
+            Thread.sleep(3000);
             WebElement beautyAndSpaOptionLink = driver.findElement(By.id("featured-category-box"));
             Assert.assertTrue(beautyAndSpaOptionLink.isDisplayed(), "The message is not displayed");
 
@@ -224,7 +165,7 @@ public class Aigerim {
             blog.click();
         }
 
-        @AfterClass
+        @AfterMethod
         public void close(){
             driver.close();
         }

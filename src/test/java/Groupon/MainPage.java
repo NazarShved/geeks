@@ -53,8 +53,10 @@ public class MainPage {
     public void pickMenuOption(By by){
 
        try{
+           wait.until(ExpectedConditions.elementToBeClickable(by));
            driver.findElement(by).click();
        }catch (Exception e) {
+           System.out.println(e.getMessage());
            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nothx")));
            driver.findElement(By.id("nothx")).click();
            if (driver.findElements(By.id("nothx1")).size() == 0) driver.findElement(by).click();
@@ -90,6 +92,11 @@ public class MainPage {
             if(!el.getText().toLowerCase().contains(check.toLowerCase())) countMis++;
         }
         return countMis;
+    }
+
+    public void mainSearchChangeCity(String city){
+        driver.findElement(By.id("ls-location")).clear();
+        driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).sendKeys(city + Keys.ENTER);
     }
 
 }
