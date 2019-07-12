@@ -167,7 +167,6 @@ public class GrouponAidana {
         System.out.println("============================");
         Thread.sleep(1000);
         for (WebElement location : locations) {
-            System.out.println(location.getText());
 
             if (!location.getText().toLowerCase().contains("chicago")) {
 
