@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Aigerim {
+public class BeautyAndSpaAigerim {
 
       static WebDriver driver;
       static MainPage mp;
@@ -41,9 +41,10 @@ public class Aigerim {
             mp.mainSearchChangeCity("New York City");
             // choosing Beauty and Spas link;
 
-            Thread.sleep(3000);
+            Thread.sleep(4000);
 
             WebElement beautyAndSpaOptionLink = driver.findElement(By.id("featured-category-box"));
+            Thread.sleep(1000);
             Assert.assertTrue(beautyAndSpaOptionLink.isDisplayed(), "The message is not displayed");
 
             driver.findElement(By.xpath("//span[@id='category-arrow']")).click();
@@ -52,7 +53,7 @@ public class Aigerim {
             // choosing 'SPA' link;
 
 
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             driver.findElement(By.xpath("(//*[@class='name truncated'])[9]")).click();
             Thread.sleep(2000);
             WebElement spaLink = driver.findElement(By.xpath("//span[@class='featured-title c-txt-white']"));

@@ -47,19 +47,22 @@ public class MainPage {
         driver.get("https://www.groupon.com/");
 
         PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 12);
     }
 
-    public void pickMenuOption(By by){
+    public void pickMenuOption(By by) throws InterruptedException {
 
        try{
            wait.until(ExpectedConditions.elementToBeClickable(by));
            driver.findElement(by).click();
        }catch (Exception e) {
            System.out.println(e.getMessage());
-           wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nothx")));
-           driver.findElement(By.id("nothx")).click();
-           if (driver.findElements(By.id("nothx1")).size() == 0) driver.findElement(by).click();
+           wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nothx"))).click();
+
+          Thread.sleep(2000);
+          driver.findElement(by).click();
+
+
        }
     }
 
@@ -67,15 +70,19 @@ public class MainPage {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
         mainSearchWindow.sendKeys(search);
-        wait.until(ExpectedConditions.elementToBeClickable(mainSearchButton));
+
         mainSearchButton.click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
-        wait.until(ExpectedConditions.visibilityOfAllElements(searchResultTitles));
+        WebElement fBrandBox = wait.until(ExpectedConditions.elementToBeClickable(featuredBrandBox));
 
-        featuredBrandBox.click();
-        wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
-
+        try{
+            fBrandBox.click();
+            wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
+        }catch (Exception e){
+            fBrandBox.click();
+            wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
+        }
 
         for (int i = 0; i < searchSortByBrandAllOptions.size(); i++) {
             if (searchSortByBrandAllOptions.get(i).getText().toLowerCase().contains(brand.toLowerCase())) {
