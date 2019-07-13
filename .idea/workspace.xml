@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="554c6a0e-c9bc-4e20-969a-2cbabb07519b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/Aigerim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/BeautyAndSpaAigerim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/CouponsVusal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/CouponsVusal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/GrouponAidana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/FeaturedAidana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/GoodsKadir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/BeautyAndSpaAigerim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/BeautyAndSpaAigerim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/Olha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/Aigerim.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/CouponsVusal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Groupon/CouponsVusal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/GrouponAidana.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/KadirSarisu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Groupon/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/MainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Groupon/Olha.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testNg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/BeautyAndSpaAigerim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="-27">
+              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -55,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+            <state relative-caret-position="464">
+              <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -64,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="1768">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -89,10 +75,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1258">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
+            <state relative-caret-position="83">
+              <caret line="122" column="128" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
             </state>
           </provider>
         </entry>
@@ -115,11 +110,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/Groupon/KadirSarisu.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java" />
         <option value="$PROJECT_DIR$/src/test/java/Groupon/FeaturedAidana.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java" />
         <option value="$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Groupon/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java" />
         <option value="$PROJECT_DIR$/src/test/java/Groupon/BeautyAndSpaAigerim.java" />
       </list>
     </option>
@@ -199,24 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BeautyAndSpaAigerim.GrouponBeautyAndSpa3">
-    <configuration name="BeautyAndSpaAigerim" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="chicagob11" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Groupon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Groupon" />
-      <option name="MAIN_CLASS_NAME" value="Groupon.BeautyAndSpaAigerim" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/Shvednazar994/Desktop/geeks/testNg.xml">
     <configuration name="BeautyAndSpaAigerim.GrouponBeautyAndSpa3" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="chicagob11" />
       <extension name="coverage">
@@ -280,13 +258,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TravelNazar.sortByPriceSlider" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="chicagob11" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Groupon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Groupon" />
+      <option name="MAIN_CLASS_NAME" value="Groupon.TravelNazar" />
+      <option name="METHOD_NAME" value="sortByPriceSlider" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BeautyAndSpaAigerim.GrouponBeautyAndSpa3" />
-        <item itemvalue="TestNG.BeautyAndSpaAigerim.GrouponBeautySpa" />
-        <item itemvalue="TestNG.BeautyAndSpaAigerim" />
         <item itemvalue="TestNG.C:/Users/Shvednazar994/Desktop/geeks/testNg.xml" />
         <item itemvalue="TestNG.TravelNazar" />
+        <item itemvalue="TestNG.TravelNazar.sortByPriceSlider" />
+        <item itemvalue="TestNG.BeautyAndSpaAigerim.GrouponBeautyAndSpa3" />
+        <item itemvalue="TestNG.BeautyAndSpaAigerim.GrouponBeautySpa" />
       </list>
     </recent_temporary>
   </component>
@@ -304,18 +300,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LocalOlha - 2019.07.12 at 13h 01m 49s.xml">
-      <configuration name="LocalOlha" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Shvednazar994_Desktop_geeks_testNg_xml - 2019.07.12 at 15h 15m 07s.xml">
-      <configuration name="C:/Users/Shvednazar994/Desktop/geeks/testNg.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LocalOlha_localSortMinMax - 2019.07.12 at 15h 28m 43s.xml">
-      <configuration name="LocalOlha.localSortMinMax" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ThingsToDoPageNurlan_test1 - 2019.07.12 at 15h 29m 54s.xml">
-      <configuration name="ThingsToDoPageNurlan.test1" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TravelNazar - 2019.07.12 at 15h 32m 33s.xml">
       <configuration name="TravelNazar" configurationId="TestNG" />
     </history-entry>
@@ -334,9 +318,22 @@
     <history-entry file="BeautyAndSpaAigerim_GrouponBeautyAndSpa3 - 2019.07.12 at 15h 56m 06s.xml">
       <configuration name="BeautyAndSpaAigerim.GrouponBeautyAndSpa3" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Shvednazar994_Desktop_geeks_testNg_xml - 2019.07.12 at 16h 25m 52s.xml">
+      <configuration name="C:/Users/Shvednazar994/Desktop/geeks/testNg.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TravelNazar_sortByPriceSlider - 2019.07.12 at 18h 51m 25s.xml">
+      <configuration name="TravelNazar.sortByPriceSlider" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TravelNazar - 2019.07.12 at 21h 09m 02s.xml">
+      <configuration name="TravelNazar" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Shvednazar994_Desktop_geeks_testNg_xml - 2019.07.12 at 21h 22m 17s.xml">
+      <configuration name="C:/Users/Shvednazar994/Desktop/geeks/testNg.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,7 +344,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05529954" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2549923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -385,31 +382,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/ThingsToDoPageNurlan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="231" column="23" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1258">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -420,10 +403,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/TravelNazar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/LocalOlha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="122" column="128" selection-start-line="122" selection-start-column="128" selection-end-line="122" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Groupon/BeautyAndSpaAigerim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        <state relative-caret-position="-27">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
         </state>
       </provider>
     </entry>

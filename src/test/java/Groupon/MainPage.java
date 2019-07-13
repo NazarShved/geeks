@@ -3,16 +3,14 @@ package Groupon;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Function;
 
 public class MainPage {
     //Vusal
@@ -57,7 +55,7 @@ public class MainPage {
            driver.findElement(by).click();
        }catch (Exception e) {
            System.out.println(e.getMessage());
-           wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nothx"))).click();
+          if(driver.findElements(By.id("nothx")).size() > 0) driver.findElement(By.id("nothx")).click();
 
           Thread.sleep(2000);
           driver.findElement(by).click();
@@ -66,7 +64,7 @@ public class MainPage {
        }
     }
 
-    public void searchSortByBrand(String search, String brand) throws InterruptedException {
+    public void searchSortByBrand(String search, String brand){
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
         mainSearchWindow.sendKeys(search);
@@ -104,6 +102,27 @@ public class MainPage {
     public void mainSearchChangeCity(String city){
         driver.findElement(By.id("ls-location")).clear();
         driver.findElement(By.xpath("//*[@id=\"ls-location\"]")).sendKeys(city + Keys.ENTER);
+    }
+
+    public boolean priceRangeSliderCheck(){
+
+            wait.until(ExpectedConditions.elementToBeClickable(By.id("rangeFilters-arrow"))).click();
+
+            //Thread.sleep(1500);
+            wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("(//*[@class = 'input-range__slider'])[1]")));
+            Actions act = new Actions(driver);
+            WebElement slider1 = driver.findElement(By.xpath("(//*[@class = 'input-range__slider'])[1]"));
+
+            js = (JavascriptExecutor)driver;
+            String script = "return document.getElementsByTagName(\"input\")[5].value;";
+            String value = "";
+            for(int i = 1; i < 40; i++) {
+                act.moveToElement(slider1).clickAndHold().moveByOffset(5, 0).build().perform();
+                String tempValue = (String)js.executeScript(script);
+                if(tempValue.equals(value)) return false;
+            }
+
+            return true;
     }
 
 }
