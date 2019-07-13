@@ -121,8 +121,8 @@ public class LocalOlha {
         String selectedLocation = driver.findElement(By.xpath("//div//span[@class='featured-title c-txt-white']")).getText();
         System.out.println(selectedLocation);
         List<WebElement> locations = driver.findElement(By.id("pull-cards")).findElements(By.cssSelector(".cui-location-name"));
-     //   Thread.sleep(1000);
         for (WebElement location : locations){
+            Thread.sleep(500);
             if (!location.getText().contains(selectedLocation)){
                 System.out.println("Location verification FAILED");
                 return false;

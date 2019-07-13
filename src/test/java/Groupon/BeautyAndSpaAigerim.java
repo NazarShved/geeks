@@ -105,9 +105,8 @@ public class BeautyAndSpaAigerim {
 
 
             // HAIR link;
-            Thread.sleep(2000);
-            WebElement hairLink = driver.findElement(By.xpath("(//label[@class='name truncated'])[5]"));
-            hairLink.click();
+            Thread.sleep(3000);
+            driver.findElement(By.xpath("(//label[@class='name truncated'])[5]")).click();
 
             Thread.sleep(5000);
 
@@ -155,6 +154,7 @@ public class BeautyAndSpaAigerim {
 
             // accessing nails
 
+            Thread.sleep(1500);
             WebElement nailLink = driver.findElement(By.xpath("(//label[@class='name truncated'])[10]"));
             nailLink.click();
 

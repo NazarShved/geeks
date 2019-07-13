@@ -108,6 +108,14 @@ public class TravelNazar {
         Assert.assertTrue(mp.searchCheckResults(brand) <= 5);
     }
 
+    @Test
+    public void sortByPriceSlider() throws InterruptedException {
+        //As a user I want to be able to see the price changes when I drag the price slider.
+
+        mp.pickMenuOption(By.id("things-to-do-tab-link"));
+        Assert.assertTrue(mp.priceRangeSliderCheck());
+    }
+
     @AfterMethod
     public void shutDown() {
         driver.quit();
