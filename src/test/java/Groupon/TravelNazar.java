@@ -57,6 +57,7 @@ public class TravelNazar {
         
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         travel.select(By.xpath("(//div[@class = 'icon-selection-box instrument'])[2]/span"));
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"));
 
