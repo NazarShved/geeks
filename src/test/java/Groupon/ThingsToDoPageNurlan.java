@@ -2,6 +2,7 @@ package Groupon;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -27,16 +28,9 @@ public class ThingsToDoPageNurlan {
 
     @Test
     public void test1() throws InterruptedException{
-
-       // WebDriverManager.chromedriver().setup();
-        //driver = new ChromeDriver();
-
-        //grouponThingsToDo(driver);
+      
         String category = driver.findElement(By.id("pull-page-header-title")).getText();
 
-
-
-       // grouponThingsToDo(driver);
         Thread.sleep(1000);
 
         grouponThingsToDoSetUpPrice(driver, "100");
@@ -66,11 +60,6 @@ public class ThingsToDoPageNurlan {
     @Test
     public void test2() throws InterruptedException{
 
-        //driver = new ChromeDriver();
-
-       // grouponThingsToDo(driver);
-
-        //grouponThingsToDo(driver);
         Thread.sleep(2000);
 
         grouponThingsToDoSetUpPrice(driver, "45");
@@ -98,9 +87,6 @@ public class ThingsToDoPageNurlan {
     @Test
     public void test3() throws InterruptedException{
 
-        //driver = new ChromeDriver();
-
-        //grouponThingsToDo(driver);
         Thread.sleep(2000);
 
         Assert.assertTrue(grouponThingsToDoSportsAndOutdoors(driver));
@@ -113,22 +99,6 @@ public class ThingsToDoPageNurlan {
         //System.out.println();
     }
 
-
-//    public void grouponThingsToDo(WebDriver driver)throws InterruptedException{
-//        driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-//        driver.get("https://www.groupon.com");
-//        driver.manage().window().fullscreen();
-//        Thread.sleep(2000);
-//        try {
-//            driver.findElement(By.id("things-to-do-tab-link")).click();
-//        }catch (Exception e){
-//            driver.findElement(By.id("nothx")).click();
-//            Thread.sleep(1500);
-//            driver.findElement(By.id("things-to-do-tab-link")).click();
-//        }
-//
-//    }
-
     @AfterMethod
     public void closeChrome(){
 
@@ -139,6 +109,7 @@ public class ThingsToDoPageNurlan {
 
 
     public static boolean grouponThingsToDoSportsAndOutdoors(WebDriver driver) throws InterruptedException {
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("featured-category-box")).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("(//label[@class='name truncated'])[6]")).click();
@@ -151,8 +122,7 @@ public class ThingsToDoPageNurlan {
 
     public static boolean grouponThingsToDoSortByPriceLowToHigh(WebDriver driver) throws InterruptedException {
 
-       //driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-        Thread.sleep(1000);
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("sort-arrow")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("(//div[@class='refinement'])[2]")).click();
@@ -165,8 +135,8 @@ public class ThingsToDoPageNurlan {
 
     public static void grouponThingsToDoSetUpByRatingTop(WebDriver driver) throws InterruptedException {
 
-        //driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-        Thread.sleep(1000);
+
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("rating-arrow")).click();
         Thread.sleep(1000);
         driver.findElement(By.id("featured-rating-[4..5]-label")).click();
@@ -179,7 +149,7 @@ public class ThingsToDoPageNurlan {
     public static void grouponThingsToDoPopularityByTopSeller(WebDriver driver) throws InterruptedException {
 
         //driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
-        Thread.sleep(1000);
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("badge-arrow")).click();
         Thread.sleep(1000);
         driver.findElement(By.id("featured-badge-top-seller-label")).click();
@@ -191,7 +161,7 @@ public class ThingsToDoPageNurlan {
     }
 
     public static void grouponThingsToDoSetUpLocationToOldTown(WebDriver driver) throws InterruptedException {
-        Thread.sleep(1000);
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("location-arrow")).click();
         Thread.sleep(1000);
         driver.findElement(By.id("featured-location-old-town-chicago-il-label")).click();
@@ -203,7 +173,7 @@ public class ThingsToDoPageNurlan {
     }
 
     public static void grouponThingsToDoSetUpLocationToMagnificentMile(WebDriver driver) throws InterruptedException {
-        Thread.sleep(1000);
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));;
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.id("location-arrow")).click();
         Thread.sleep(1000);
@@ -218,7 +188,7 @@ public class ThingsToDoPageNurlan {
     public static void grouponThingsToDoSetUpLocationToChicago(WebDriver driver) throws InterruptedException {
 
         //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Thread.sleep(1000);
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("location-arrow")).click();
         Thread.sleep(1000);
         driver.findElement(By.id("featured-location-chicago-label")).click();
@@ -226,8 +196,8 @@ public class ThingsToDoPageNurlan {
 
     public static void grouponThingsToDoSetUpPrice(WebDriver driver, String price) throws InterruptedException {
 
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Thread.sleep(500);
+
+        mp.wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         driver.findElement(By.id("rangeFilters-arrow")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@title='Price max']")).sendKeys(Keys.BACK_SPACE);

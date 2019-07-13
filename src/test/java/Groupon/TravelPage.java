@@ -55,6 +55,7 @@ public class TravelPage {
 
     public void pickCity(String city){
 
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         wait.until(ExpectedConditions.elementToBeClickable(pickCityField));
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
@@ -71,6 +72,7 @@ public class TravelPage {
     }
 
     public void pickDate(String month, String day) throws Exception {
+
 
         String str = calendarMonthValue.getText();
         if (!str.toLowerCase().contains(month.toLowerCase())) {
@@ -91,6 +93,7 @@ public class TravelPage {
 
     public void pickDate(String depMonth, String depDay, String retMonth, String retDay) throws Exception {
 
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         calendarOpen.click();
         pickDate(depMonth, depDay);
         pickDate(retMonth, retDay);

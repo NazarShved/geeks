@@ -74,13 +74,11 @@ public class MainPage {
         wait.until(ExpectedConditions.elementToBeClickable(By.id("iam-msg")));
         WebElement fBrandBox = wait.until(ExpectedConditions.elementToBeClickable(featuredBrandBox));
 
-        try{
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
+
             fBrandBox.click();
             wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
-        }catch (Exception e){
-            fBrandBox.click();
-            wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".refinement"))));
-        }
+
 
         for (int i = 0; i < searchSortByBrandAllOptions.size(); i++) {
             if (searchSortByBrandAllOptions.get(i).getText().toLowerCase().contains(brand.toLowerCase())) {
@@ -105,6 +103,8 @@ public class MainPage {
     }
 
     public boolean priceRangeSliderCheck(){
+
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
 
             wait.until(ExpectedConditions.elementToBeClickable(By.id("rangeFilters-arrow"))).click();
 
