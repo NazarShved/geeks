@@ -3,6 +3,7 @@ package Groupon;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -39,6 +40,7 @@ public class TravelPage {
 
         js = (JavascriptExecutor) driver;
        PageFactory.initElements(driver, this);
+       wait = new WebDriverWait(driver, 5);
     }
 
 
@@ -50,11 +52,15 @@ public class TravelPage {
         driver.findElement(by).click();
     }
 
-    public void pickCity(String city) throws InterruptedException {
 
+    public void pickCity(String city){
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
+        wait.until(ExpectedConditions.elementToBeClickable(pickCityField));
         pickCityField.click();
         pickCityField.sendKeys(city.substring(0, 3));
-        Thread.sleep(2000);
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".ui-corner-all.ui-state-focus")));
         while (true) {
             if (driver.findElement(By.cssSelector(".ui-corner-all.ui-state-focus")).getText().toLowerCase().contains(city.toLowerCase())) {
                pickCityField.sendKeys(Keys.ENTER);
@@ -66,6 +72,7 @@ public class TravelPage {
     }
 
     public void pickDate(String month, String day) throws Exception {
+
 
         String str = calendarMonthValue.getText();
         if (!str.toLowerCase().contains(month.toLowerCase())) {
@@ -79,7 +86,6 @@ public class TravelPage {
             if (el.getText().equalsIgnoreCase(day)) {
                 el.click();
                 break;
-                //Nazar was here palying with code 
             }
             if (calendarBodyNumbers.indexOf(el) == calendarBodyNumbers.size() - 1) throw new Exception("Pick the rigth date");
         }
@@ -87,23 +93,23 @@ public class TravelPage {
 
     public void pickDate(String depMonth, String depDay, String retMonth, String retDay) throws Exception {
 
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         calendarOpen.click();
         pickDate(depMonth, depDay);
-        Thread.sleep(1000);
         pickDate(retMonth, retDay);
 
     }
 
 
 
-    public  int checkCity() throws InterruptedException {
+    public  int checkCity() {
 
         js = (JavascriptExecutor) driver;
         String script = "return document.getElementsByClassName(\"ui-autocomplete-input\")[0].value;";
         String value = (String) js.executeScript(script);
         String city = value.substring(0, value.indexOf(","));
 
-        Thread.sleep(3000);
+        wait.until(ExpectedConditions.elementToBeClickable(searchResults.get(2)));
         int countMissCity = 0;
         for (WebElement el : searchResults) {
             if (el.getText().isEmpty()) continue;

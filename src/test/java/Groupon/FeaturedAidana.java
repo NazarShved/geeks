@@ -6,23 +6,47 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class GrouponAidana {
-    public static void main(String[] args) throws InterruptedException {
+public class FeaturedAidana {
 
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://www.groupon.com/");
+    static WebDriver driver;
+    static MainPage mp;
 
-      // verifyPriceRangeInDealsOfTheDay(driver);
-        locationVerificationInFeatured(driver);
-        //priceRangeVerificationInFeatured(driver,1,1000);
+    @BeforeMethod
+    public void setUp() throws InterruptedException {
+        mp=new MainPage();
+        this.driver =mp.driver;
+        Thread.sleep(2000);
+    }
+
+    @Test
+    public void dealsOfTheDayVerifyPriceRange() throws InterruptedException{
+        Assert.assertTrue(verifyPriceRangeInDealsOfTheDay(driver));
+    }
+
+    @Test
+    public void verifyLocationInFeatured()throws InterruptedException{
+        Assert.assertTrue(locationVerificationInFeatured(driver));
+    }
+
+    @Test
+    public void verifyPriceRangeInFeatured()throws InterruptedException{
+        Assert.assertTrue(priceRangeVerificationInFeatured(driver, 10,1000));
+    }
+
+    @AfterMethod
+    public void tearDown()throws InterruptedException{
+        Thread.sleep(3000);
+        driver.close();
+
     }
 
     //Click on "Popularity" and verify the default value
@@ -64,18 +88,7 @@ public class GrouponAidana {
     //4.Verify if the item's prices are within the selected price range
 
     public static boolean verifyPriceRangeInDealsOfTheDay(WebDriver driver)throws InterruptedException{
-        try {
-            Thread.sleep(1000);
-            //Deals of the Day Button
-            driver.findElement(By.id("goods-deal-of-day-tab-link")).click();
-
-        }catch (Exception e){
-            //No Thanks Button
-            driver.findElement(By.id("nothx")).click();
-            Thread.sleep(1500);
-            driver.findElement(By.id("goods-deal-of-day-tab-link")).click();
-            Thread.sleep(1500);
-        }
+        mp.pickMenuOption(By.id("goods-deal-of-day-tab-link"));
         //Click For the Home Checkbox
         driver.findElement(By.xpath("//label[@for='facet_category_for-the-home']")).click();
         Thread.sleep(1000);
@@ -89,7 +102,7 @@ public class GrouponAidana {
         Thread.sleep(1000);
 
         for (WebElement productPrice : priceList) {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
             ArrayList<String> actualPriceList = new ArrayList();
             actualPriceList.add(productPrice.getText());
             Thread.sleep(1000);
@@ -125,18 +138,11 @@ public class GrouponAidana {
     //6.Sort by Low to High
 
     public static boolean locationVerificationInFeatured(WebDriver driver)throws InterruptedException {
-        try {
-            Thread.sleep(1000);
-            //Click on Featured Button
-            driver.findElement(By.id("home-tab-link")).click();
-        } catch (Exception e) {
-            //No Thanks Button
-            driver.findElement(By.id("nothx")).click();
-            Thread.sleep(1500);
-            driver.findElement(By.id("home-tab-link")).click();
-            Thread.sleep(1500);
-        }
+
+        mp.pickMenuOption(By.id("home-tab-link"));
+
         //Click on Restaraunts Button
+        Thread.sleep(2000);
         driver.findElement(By.xpath("(//div[@class='cui-nav-icon-image-wrapper'])[3]")).click();
         Thread.sleep(2000);
         //Click on Food and Drinks
@@ -148,10 +154,10 @@ public class GrouponAidana {
         //Click on "Location"
         driver.findElement(By.id("featured-location-box")).click();
         Thread.sleep(2000);
-        //Choose "Chicago"// any City
-       WebElement city = driver.findElement(By.xpath("//div[@class = 'refinement-list']/div[3]"));
-       String cityName = city.getText();
-        System.out.println(cityName);
+        //Choose "Chicago"
+      // String cityName = driver.findElement(By.id("featured-location-chicago-label")).getText();
+        driver.findElement(By.id("featured-location-chicago-label")).click();
+
         Thread.sleep(2000);
 
         //Verify all the result are within the chosen location ("Chicago)
@@ -161,20 +167,14 @@ public class GrouponAidana {
         System.out.println("============================");
         Thread.sleep(1000);
         for (WebElement location : locations) {
-            System.out.println(location.getText());
 
-            if (!location.getText().contains(cityName)) {
+            if (!location.getText().toLowerCase().contains("chicago")) {
 
                 return false;
             }
-//             else {
-//                System.out.println("Location verification Failed");
-//                break;
-//            }
         }
         Thread.sleep(1000);
         System.out.println("============================");
-       // System.out.println("Location verification Passed");
         Thread.sleep(1000);
 
         //Using ready methods to verify default values for "Popularity" and "Ratings" and Sort by "Low to High"
@@ -183,8 +183,6 @@ public class GrouponAidana {
         sortLowToHigh(driver);
         return true;
     }
-
-
 
 
     //TEST CASE #3 "Featured"
@@ -200,17 +198,7 @@ public class GrouponAidana {
     public static boolean priceRangeVerificationInFeatured (WebDriver driver, int minPrice, int maxPrice )
             throws InterruptedException {
 
-        try {
-            Thread.sleep(1000);
-            //Click on Featured Button
-            driver.findElement(By.id("home-tab-link")).click();
-        } catch (Exception e) {
-            //No Thanks Button
-            driver.findElement(By.id("nothx")).click();
-            Thread.sleep(1500);
-            driver.findElement(By.id("home-tab-link")).click();
-            Thread.sleep(1500);
-        }
+        mp.pickMenuOption(By.id("home-tab-link"));
 
         Thread.sleep(1000);
         //Click on Restaraunts Button
@@ -247,8 +235,8 @@ public class GrouponAidana {
         driver.findElement(By.id("featured-location-box")).click();
         Thread.sleep(2000);
         //Choose "Chicago"
-       // driver.findElement(By.id("featured-location-chicago-label")).click();
-        driver.findElement(By.xpath("//div[@class = 'refinement-list']/div[3]"));
+        driver.findElement(By.id("featured-location-chicago-label")).click();
+       // driver.findElement(By.xpath("//div[@class = 'refinement-list']/div[3]"));
         Thread.sleep(1000);
 
         //Using ready methods to verify default values for "Popularity" and "Ratings" and Sort by "Low to High"
@@ -266,12 +254,8 @@ public class GrouponAidana {
             priceWithout$Sign = price.getText().substring(1).replace(",", "");
             double priceDouble = Double.parseDouble(priceWithout$Sign);
             if (priceDouble < minPrice || priceDouble > maxPrice) {
-                //System.out.println(priceDouble);
                 return false;
             }
-//            } else {
-//                System.out.println("Price Range Verifiction Failed");
-//                break;
             }
 
         Thread.sleep(1000);

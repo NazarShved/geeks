@@ -1,5 +1,7 @@
 package Groupon;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,39 +10,35 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import static Groupon.GrouponAidana.*;
-import static Groupon.ThingsToDoPageNurlan.*;
 
-
-public class MainTest {
+public class TravelNazar {
     static WebDriver driver;
     static JavascriptExecutor js;
     static Properties prop;
     static TravelPage travel;
     static MainPage mp;
+    static WebDriverWait wait;
 
     @BeforeMethod
     public void setUp() throws InterruptedException, IOException {
-        //Vussal
         prop = new Properties();
         FileInputStream fis = new FileInputStream("Args.properties");
         prop.load(fis);
-
         mp = new MainPage();
-
         driver = mp.driver;
         js = (JavascriptExecutor) driver;
-        Thread.sleep(2000);
+        this.wait = mp.wait;
     }
 
     @Test
     public void calendarFuncDepAndRet() throws Exception {
-        //Nazar
+        //As a user I want to be able to pick my desired departure and return dates.
+
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"), prop.getProperty("retDateMonth"), prop.getProperty("retDateDay"));
 
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".total-nights")));
 
         String script = "return document.getElementsByClassName(\"icon-selection-box instrument\")[1].textContent;";
         String value = (String) js.executeScript(script);
@@ -55,10 +53,11 @@ public class MainTest {
 
     @Test
     public void calendarFuncOnlyDep() throws Exception {
-        //Nazar
+        //As a user I want to be able to pick my desired departure date.
         
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("cui-shell-info")));
         travel.select(By.xpath("(//div[@class = 'icon-selection-box instrument'])[2]/span"));
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"));
 
@@ -74,7 +73,7 @@ public class MainTest {
 
     @Test
     public void enterCityWithAutoSug() throws Exception {
-        //Nazar
+        //As a user I want to recive suggestions while I'm entering my City in the search box.
 
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
@@ -87,70 +86,36 @@ public class MainTest {
     }
 
     @Test
-    public void searchFunc() throws Exception {
-        //Nazar
+    public void TravelSearchFunc() throws Exception {
+        //As a user Iwant to be able to search for hotels ,by my desired city, that are avilable at my desired date.
 
         mp.pickMenuOption(By.id("getaways-tab-link"));
         travel = new TravelPage(driver);
         travel.pickCity("san antonio");
         travel.pickDate(prop.getProperty("depDateMonth"), prop.getProperty("depDateDay"), prop.getProperty("retDateMonth"), prop.getProperty("retDateDay"));
-        Thread.sleep(1000);
+        wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".total-nights")));
         travel.clickOnSearchIcon();
         Assert.assertTrue(travel.checkCity() < 5);
     }
 
     @Test
     public void searchSortByBrand() throws Exception {
-        //Vusal
+   //As a user I want to be able to sort my search results by the brand name
 
         mp.pickMenuOption(By.id("ls-search"));
         String brand = prop.getProperty("brandName");
         mp.searchSortByBrand("toys", brand);
-
-        Thread.sleep(2000);
+        wait.until(ExpectedConditions.textToBePresentInElement(driver.findElement(By.xpath("(//span[@class = 'featured-title c-txt-white'])[2]")),brand));
         Assert.assertTrue(mp.searchCheckResults(brand) <= 5);
     }
 
-
-
-
     @Test
-    public void dealsOfTheDayVerPriceRange() throws InterruptedException {
-        //Aidana Class
-        Assert.assertTrue(GrouponAidana.verifyPriceRangeInDealsOfTheDay(driver));
+    public void sortByPriceSlider() throws InterruptedException {
+        //As a user I want to be able to see the price changes when I drag the price slider.
+
+        mp.pickMenuOption(By.id("things-to-do-tab-link"));
+        Assert.assertTrue(mp.priceRangeSliderCheck());
     }
-
-    @Test
-    public void featuredLocationVer() throws InterruptedException {
-        //Aidana Class
-        Assert.assertTrue(GrouponAidana.locationVerificationInFeatured(driver));
-    }
-
-    @Test
-    public void featuredPriceRangeVer() throws InterruptedException {
-        //Aidana Class
-        Assert.assertTrue(GrouponAidana.priceRangeVerificationInFeatured(driver,1,1000));
-    }
-
-    @Test
-    public void kadirTests() throws InterruptedException {
-        //Kadir Sarisu refer to class migth not work properly from here
-        KadirSarisu.main(new String[0]);
-    }
-
-    @Test
-    public void olhaTests() throws InterruptedException {
-        //Olha Koval refer to class migth not work properly from here
-        Olha.main(new String[0]);
-    }
-
-//    @Test
-//    public void aigerimTests() throws InterruptedException {
-//        //Aigerim Attanbekova refer to class migth not work properly from here
-//        Aigerim.main(new String[0]);
-//    }
-
-
 
     @AfterMethod
     public void shutDown() {
